@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ /*Header area*/
+header{
+    background-color: dimgrey;
+    color: antiquewhite;
+    padding: 1rem;
+    text-align: center;
+}
+.nav-links{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+.nav-links a{
+    color: rgb(185, 167, 131);
+    text-decoration: none;
+     transition: color 1s ease-in-out;
+}
+ a:hover{
+    color: rgb(50, 6, 6);
+}
+
+/*Section area*/
+.grid-layout{
+    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/*Footer*/
+footer{
+    border: 2px solid rgb(52, 28, 28);
+    background-color: blanchedalmond;
+    justify-items: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/*Media responsiveness*/
+@media (max-width:768px){
+    .grid-layout{
+        grid-template-columns: 1fr;
+    }
+    .nav-links{
+        flex-direction:column;
+    }
+}
